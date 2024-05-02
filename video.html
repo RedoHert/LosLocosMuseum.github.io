@@ -11,6 +11,24 @@
         body{
             margin: 0;
         }
+        #btnVoltarTopo {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            font-size: 16px;
+            border: none;
+            outline: none;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        #btnVoltarTopo:hover {
+            background-color: #555;
+        }
         .top{
             background-color: beige;
             padding: 20px;
@@ -96,12 +114,33 @@
         <video width="50%" height="200" controls>
             <source src="https://cdn.discordapp.com/attachments/977948516653604885/983169746344214548/VID-20220522-WA0049.mp4?ex=66338aed&is=6632396d&hm=e902fca7c882a4e6f1d61c21b8bdefe73dcc2157c7839f9c87db14761c74e2a6&" type="video/mp4">
         </video>
-        <!--Vídeos aqui (200x200)-->
+       
     </div>
+    <button onclick="voltarParaTopo()" id="btnVoltarTopo">Voltar para o topo</button>
     <hr>
     <footer class="rodape">
        <p><u> ©2024 - RedoHert todos os direitos reservados</u></p>
     </footer>
 
 </body>
+<script>
+    
+    function voltarParaTopo() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+
+   
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("btnVoltarTopo").style.display = "block";
+        } else {
+            document.getElementById("btnVoltarTopo").style.display = "none";
+        }
+    }
+</script>
 </html>
