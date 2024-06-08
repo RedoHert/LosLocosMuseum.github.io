@@ -145,6 +145,10 @@
     border: 1px solid black;
 }
 
+.editlabel{
+    font-size: 20px;
+}
+
 .foils{
     display: block;
     margin: 0 auto;
@@ -153,7 +157,7 @@
 }
     </style>
     <link rel="icon" type="image/png" 
-    href="imgs/logo.png"
+    href="imgs/logo.png">
 </head>
 <body style="background-color: white;">
     
@@ -161,7 +165,6 @@
         <div class="logo">
             <img src="imgs/LLANOBG.png" style="position:absolute; left: 10px; top: 40px; width: 10%; max-width: 100px;">
         </div>
-    
     
         <h1>Provas dos Los Locos 2016</h1>
         <p>Lista de provas realizadas para os integrantes dos Los Locos 2016</p>
@@ -172,43 +175,79 @@
         </div>
     </div>
     <div class="foils">
-        <h3>LL2016 - 1° Edição</h3>
-        <h4>Folha 1</h4>
-        <br>
-        <img src="imgs/provas/1edicao/LL2016-1edicao-1.png" height="800" width="700">
-        <br>
-        <h4>Folha 2</h4>
-        <br>
-        <img src="imgs/provas/1edicao/LL2016-1edicao-2.png" height="800" width="700">
-        <br>
-        <h4>Folha 3</h4>
-        <br>
-        <img src="imgs/provas/1edicao/LL2016-1edicao-3.png" height="800" width="700">
-        <br>
+        <div class="selectedition">
+            <label class="editlabel" for="edition">Edição:</label>
+            <select id="edition" name="Edição" onchange="filterEditions()">
+                <option value="Todas">Todas</option>
+                <option value="Primeira">Primeira</option>
+                <option value="Segunda">Segunda</option>
+                <option value="Terceira">Terceira</option>
+                <option value="Quarta">Quarta</option>
+            </select>
+        </div>
+
+        <div class="edition" data-edition="Primeira">
+            <h3>LL2016 - 1° Edição</h3>
+            <a href="arquivos/1 edicao.zip" download="1 edicao">Baixar a primeira edição</a>
+            <h4>Folha 1</h4>
+            <br>
+            <img src="imgs/provas/1edicao/LL2016-1edicao-1.png" height="800" width="700">
+            <br>
+            <h4>Folha 2</h4>
+            <br>
+            <img src="imgs/provas/1edicao/LL2016-1edicao-2.png" height="800" width="700">
+            <br>
+            <h4>Folha 3</h4>
+            <br>
+            <img src="imgs/provas/1edicao/LL2016-1edicao-3.png" height="800" width="700">
+            <br>
+        </div>
+
         <hr>
-        <h2>LL2016 - 2° Edição</h3>
-        <h3>Folha 1</h4>
-        <br>
-        <img src="imgs/provas/2edicao/LL2016-2edicao-1.png" height="800" width="700">
-        <br>
-        <h3>Folha 2</h4>
-        <br>
-        <img src="imgs/provas/2edicao/LL2016-2edicao-2.png" height="800" width="700">
-        <br>
-        <h3>Folha 3</h4>
-        <br>
-        <img src="imgs/provas/2edicao/LL2016-2edicao-3.png" height="800" width="700">
-        <br>
+        <div class="edition" data-edition="Segunda">
+            <h2>LL2016 - 2° Edição</h2>
+            <a href="arquivos/2 edicao.zip" download="2 edicao">Baixar a segunda edição</a>
+            <h3>Folha 1</h3>
+            <br>
+            <img src="imgs/provas/2edicao/LL2016-2edicao-1.png" height="800" width="700">
+            <br>
+            <h3>Folha 2</h3>
+            <br>
+            <img src="imgs/provas/2edicao/LL2016-2edicao-2.png" height="800" width="700">
+            <br>
+            <h3>Folha 3</h3>
+            <br>
+            <img src="imgs/provas/2edicao/LL2016-2edicao-3.png" height="800" width="700">
+            <br>
+        </div>
+
         <hr>
-        <h2>LL2016 - 3° Edição</h3>
-        <h4>Folha 1</h4>
-        <img src="imgs/provas/3edicao/LL2016-3edicao_page-0001.jpg" height="800" width="700">
-        <br>
-        <h4>Folha 2</h4>
-        <img src="imgs/provas/3edicao/LL2016-3edicao_page-0002.jpg" height="800" width="700">
-        <br>
-        <h4>Folha 3</h4>
-        <img src="imgs/provas/3edicao/LL2016-3edicao_page-0003.jpg" height="800" width="700">
+        <div class="edition" data-edition="Terceira">
+            <h2>LL2016 - 3° Edição</h2>
+            <a href="arquivos/3 edicao.zip" download="3 edicao">Baixar a terceira edição</a>
+            <h4>Folha 1</h4>
+            <img src="imgs/provas/3edicao/LL2016-3edicao_page-0001.jpg" height="800" width="700">
+            <br>
+            <h4>Folha 2</h4>
+            <img src="imgs/provas/3edicao/LL2016-3edicao_page-0002.jpg" height="800" width="700">
+            <br>
+            <h4>Folha 3</h4>
+            <img src="imgs/provas/3edicao/LL2016-3edicao_page-0003.jpg" height="800" width="700">
+        </div>
+
+        <hr>
+        <div class="edition" data-edition="Quarta">
+            <h2>LL2016 - 4° Edição</h2>
+            <a href="arquivos/4 edicao.zip" download="4 edicao">Baixar a quarta edição</a>
+            <br>
+            <a href="arquivos/gabaritos/4gabaritoimg.png" download="4 edicao">Baixar o GABARITO da quarta edição</a>
+            <h4>Folha 1</h4>
+            <img src="imgs/provas/4edicao/edicao 4 nova_page-0001.jpg" height="800" width="700">
+            <h4>Folha 2</h4>
+            <img src="imgs/provas/4edicao/edicao 4 nova_page-0002.jpg" height="800" width="700">
+            <h4>Folha 3</h4>
+            <img src="imgs/provas/4edicao/edicao 4 nova_page-0003.jpg" height="800" width="700">
+        </div>
     </div>
     <button onclick="voltarParaTopo()" id="btnVoltarTopo">Voltar para o topo</button>
     <hr>
@@ -218,71 +257,60 @@
 
 </body>
 <script>
-
-function search() {
-    var input, filter, expandables, span, i, txtValue;
-    input = document.getElementById('searchInput');
-    filter = input.value.toUpperCase();
-    expandables = document.querySelectorAll('.expandable');
-  
-    expandables.forEach(function(expandable) {
-        span = expandable.querySelector('span');
-        txtValue = span.textContent || span.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            expandable.style.display = '';
-        } else {
-            expandable.style.display = 'none';
-        }
-    });
-}
-
+    function filterEditions() {
+        var selectedEdition = document.getElementById('edition').value;
+        var editions = document.querySelectorAll('.edition');
         
-        var originalTexts = {};
-
-function toggleExpand(button) {
-    var content = button.nextElementSibling.nextElementSibling;
-    var text = button.nextElementSibling;
-
-    if (!button.dataset.originalText) {
-        button.dataset.originalText = text.textContent;
+        editions.forEach(function(edition) {
+            if (selectedEdition === 'Todas' || edition.getAttribute('data-edition') === selectedEdition) {
+                edition.style.display = '';
+            } else {
+                edition.style.display = 'none';
+            }
+        });
     }
 
-    if (!originalTexts[text.textContent]) {
-        originalTexts[text.textContent] = text.textContent;
+    function search() {
+        var input, filter, expandables, span, i, txtValue;
+        input = document.getElementById('searchInput');
+        filter = input.value.toUpperCase();
+        expandables = document.querySelectorAll('.expandable');
+      
+        expandables.forEach(function(expandable) {
+            span = expandable.querySelector('span');
+            txtValue = span.textContent || span.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                expandable.style.display = '';
+            } else {
+                expandable.style.display = 'none';
+            }
+        });
     }
+            
+    var originalTexts = {};
 
-    if (content.style.display === 'none' || content.style.display === '') {
-        content.style.display = 'block';
-        button.textContent = '^';
-        text.textContent = 'Ocultar detalhes';
-    } else {
-        content.style.display = 'none';
-        button.textContent = 'V';
-        text.textContent = button.dataset.originalText;
+    function toggleExpand(button) {
+        var content = button.nextElementSibling.nextElementSibling;
+        var text = button.nextElementSibling;
+
+        if (!button.dataset.originalText) {
+            button.dataset.originalText = text.textContent;
+        }
+
+        if (!originalTexts[text.textContent]) {
+            originalTexts[text.textContent] = text.textContent;
+        }
+
+        if (content.style.display === 'none' || content.style.display === '') {
+            content.style.display = 'block';
+            button.textContent = '^';
+            text.textContent = 'Ocultar detalhes';
+        } else {
+            content.style.display = 'none';
+            button.textContent = 'V';
+            text.textContent = button.dataset.originalText;
+        }
     }
-}
-
-
-
-function voltarParaTopo() {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-}
-
-
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("btnVoltarTopo").style.display = "block";
-    } else {
-        document.getElementById("btnVoltarTopo").style.display = "none";
-    }
-}
-
-
 
     function voltarParaTopo() {
         window.scrollTo({
@@ -291,7 +319,6 @@ function scrollFunction() {
         });
     }
 
-   
     window.onscroll = function() {scrollFunction()};
 
     function scrollFunction() {
