@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        .top{
+            background-color: cornflowerblue;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .top h1{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .top p{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .menu p{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .menu a{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .menu{
+            background-color: #333;
+            overflow: hidden;
+        }
+        .menu a{
+            color: yellow;
+            text-decoration: none;
+            padding: 16px 15px;
+            display: block;
+            margin: 0;
+        }
+        .menu p{
+            color: white;
+        }
+        .rodape{
+            text-align: center;
+        }
+       .aviso{
+        background-color: red;
+        text-align: center;
+       }
+       #btnVoltarTopo {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            font-size: 16px;
+            border: none;
+            outline: none;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        #btnVoltarTopo:hover {
+            background-color: #555;
+        }
+        .expandable {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.expandable button {
+    float: right;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    border-color: black;
+    padding: 5px 10px;
+    margin: 5px;
+    color:white;
+    cursor: pointer;
+    
+}
+
+.expandable button:hover {
+    background-color: #333;
+}
+.expandable span{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.expandable span {
+    display: block;
+    background-color: #f9f9f9;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.expandable .content {
+    padding: 10px;
+}
+
+        .content p{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .body span{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .search {
+    margin: 20px auto;
+    max-width: 400px;
+    text-align: center;
+}
+
+.search input[type="text"] {
+    padding: 10px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search button:hover {
+    background-color: #555;
+}
+
+.foils img{
+    border: 1px solid black;
+}
+
+.foils{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+    </style>
+    <link rel="icon" type="image/png" 
+    href="imgs/logo.png"
+</head>
+<body style="background-color: white;">
+    
+    <div style="position: relative;" class="top">
+        <div class="logo">
+            <img src="imgs/LLANOBG.png" style="position:absolute; left: 10px; top: 40px; width: 10%; max-width: 100px;">
+        </div>
+    
+    
+        <h1>Provas dos Los Locos 2016</h1>
+        <p>Lista de provas realizadas para os integrantes dos Los Locos 2016</p>
+    </div>
+    <div class="menu">
+        <div>
+            <a href="index.html">< Voltar para o início</a>
+        </div>
+    </div>
+    <div class="foils">
+        <h3>LL2016 - 1° Edição</h3>
+        <h4>Folha 1</h4>
+        <br>
+        <img src="imgs/provas/1edicao/LL2016-1edicao-1.png" height="800" width="700">
+        <br>
+        <h4>Folha 2</h4>
+        <br>
+        <img src="imgs/provas/1edicao/LL2016-1edicao-2.png" height="800" width="700">
+        <br>
+        <h4>Folha 3</h4>
+        <br>
+        <img src="imgs/provas/1edicao/LL2016-1edicao-3.png" height="800" width="700">
+        <br>
+        <hr>
+        <h2>LL2016 - 2° Edição</h3>
+        <h3>Folha 1</h4>
+        <br>
+        <img src="imgs/provas/2edicao/LL2016-2edicao-1.png" height="800" width="700">
+        <br>
+        <h3>Folha 2</h4>
+        <br>
+        <img src="imgs/provas/2edicao/LL2016-2edicao-2.png" height="800" width="700">
+        <br>
+        <h3>Folha 3</h4>
+        <br>
+        <img src="imgs/provas/2edicao/LL2016-2edicao-3.png" height="800" width="700">
+        <br>
+        <hr>
+        <h2>LL2016 - 3° Edição</h3>
+        <img src="imgs/provas/3edicao/LL2016-3edicao_page-0001.jpg" height="800" width="700">
+        <br>
+        <img src="imgs/provas/3edicao/LL2016-3edicao_page-0002.jpg" height="800" width="700">
+        <br>
+        <img src="imgs/provas/3edicao/LL2016-3edicao_page-0003.jpg" height="800" width="700">
+    </div>
+    <button onclick="voltarParaTopo()" id="btnVoltarTopo">Voltar para o topo</button>
+    <hr>
+    <footer class="rodape">
+       <p><u> ©2024 - RedoHert todos os direitos reservados</u></p>
+    </footer>
+
+</body>
+<script>
+
+function search() {
+    var input, filter, expandables, span, i, txtValue;
+    input = document.getElementById('searchInput');
+    filter = input.value.toUpperCase();
+    expandables = document.querySelectorAll('.expandable');
+  
+    expandables.forEach(function(expandable) {
+        span = expandable.querySelector('span');
+        txtValue = span.textContent || span.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            expandable.style.display = '';
+        } else {
+            expandable.style.display = 'none';
+        }
+    });
+}
+
+        
+        var originalTexts = {};
+
+function toggleExpand(button) {
+    var content = button.nextElementSibling.nextElementSibling;
+    var text = button.nextElementSibling;
+
+    if (!button.dataset.originalText) {
+        button.dataset.originalText = text.textContent;
+    }
+
+    if (!originalTexts[text.textContent]) {
+        originalTexts[text.textContent] = text.textContent;
+    }
+
+    if (content.style.display === 'none' || content.style.display === '') {
+        content.style.display = 'block';
+        button.textContent = '^';
+        text.textContent = 'Ocultar detalhes';
+    } else {
+        content.style.display = 'none';
+        button.textContent = 'V';
+        text.textContent = button.dataset.originalText;
+    }
+}
+
+
+
+function voltarParaTopo() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("btnVoltarTopo").style.display = "block";
+    } else {
+        document.getElementById("btnVoltarTopo").style.display = "none";
+    }
+}
+
+
+
+    function voltarParaTopo() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+
+   
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("btnVoltarTopo").style.display = "block";
+        } else {
+            document.getElementById("btnVoltarTopo").style.display = "none";
+        }
+    }
+</script>
+</html>
